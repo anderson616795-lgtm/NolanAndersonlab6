@@ -42,8 +42,12 @@ public class Task3 {
 
         squareArea = gardenLength * gardenWidth;
         totalarea = squareArea / 2;
+        double hypotenuse = Math.sqrt((gardenLength * gardenLength) + (gardenWidth * gardenWidth));
+        double perimeter = hypotenuse + gardenLength + gardenWidth;
         System.out.printf("%-10s%10.2f","Your garden length is :",gardenLength);
         System.out.printf("\n%-10s%10.2f","Your garden width is :",gardenWidth);
+        System.out.printf("\n%-10s%10.2f","Your triangle shaped gardens hypotenuse is : ",hypotenuse);
+        System.out.printf("\n%-10s%10.2f","Your triangle shaped gardens perimeter is : ",perimeter);
         System.out.printf("\n%-10s%10.2f","Your triangle shaped gardens area is : ",totalarea);
 
     }
